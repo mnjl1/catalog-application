@@ -15,14 +15,14 @@ public class Application {
     private String weight;
     private String brand;
     private String manufacturerCountry;
-    private long RegularPrice;
+    private long regularPrice;
     private long promoPrice;
     private long retailMargin;
     private int promoAndRegularPriceDifference;
     private Date applicationDate;
     private boolean approveStatus;
 
-    private Application(){
+    public Application(){
     }
 
     public Application(long id, String companyName, String email, String itemName, String barcode, String weight,
@@ -36,7 +36,7 @@ public class Application {
         this.weight = weight;
         this.brand = brand;
         this.manufacturerCountry = manufacturerCountry;
-        RegularPrice = regularPrice;
+        this.regularPrice = regularPrice;
         this.promoPrice = promoPrice;
         this.retailMargin = retailMargin;
         this.promoAndRegularPriceDifference = promoAndRegularPriceDifference;
@@ -112,11 +112,11 @@ public class Application {
     }
 
     public long getRegularPrice() {
-        return RegularPrice;
+        return regularPrice;
     }
 
     public void setRegularPrice(long regularPrice) {
-        RegularPrice = regularPrice;
+    		this.regularPrice = regularPrice;
     }
 
     public long getPromoPrice() {

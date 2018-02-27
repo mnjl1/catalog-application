@@ -6,4 +6,5 @@ import ua.com.mmplus.catalogapplication.domain.model.Application;
 
 @Repository
 public interface ApplicationMongoRepository extends CrudRepository<Application, Long> {
+	 
 }

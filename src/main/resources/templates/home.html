@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home page</title>
+	<style type="text/css">
+	table, th, td{
+		border: 1px solid black;
+		border-spacing: 0px:}
+		th, td {
+			padding: 10px; }
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Постачальник</th>
+				<th>email</th>
+				<th>Найменування товару</th>
+				<th>Штрих код</th>
+				<th>Вага</th>
+				<th>Торгівельна марка</th>
+				<th>Країна виробник</th>
+				<th>Регулярна ціна</th>
+				<th>Ціна на акцію</th>
+				<th></th>
+				<th>Акційна вигода</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="application : ${applicationList}">
+				<td 	th:text="${application.companyName}"></td>
+				<td th:text="${application.email}"></td>
+				<td th:text="${application.itemName}"></td>
+				<td th:text="${application.barCode}"></td>
+				<td th:text="${application.weight}"></td>
+				<td th:text="${application.brand}"></td>
+				<td >
+			</tr>
+				
+		</tbody>	
+	</table>
+	
+</body>
+</html>
